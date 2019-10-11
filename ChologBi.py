@@ -3,9 +3,6 @@ import os
 
 client = discord.Client()  # discord.Client() 대신 "app"를 써도 되게 만드는 부분이다.
 
-token = "NjMxMTEwNDA1MjI1MzE2MzYy.XZyFhw.RdpsqSQdip-RWMmqGTGIi7h_xSg"
-#봇의 토큰
-
 # 봇이 구동되었을때 동작되는 코드부분이다.
 @client.event
 async def on_ready():
