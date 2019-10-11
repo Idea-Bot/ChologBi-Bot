@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()  # discord.Client() 대신 "app"를 써도 되게 만드는 부분이다.
 
@@ -45,5 +46,5 @@ async def on_message(message):
         await message.channel.send("2019.10.10 매년 10월 10일마다 깊카 10,000원 뿌림!!(추첨)")
     if message.content.startswith("꼬냥이"):
         await message.channel.send("이스터에그 발견!! 다음 이스터에그 헬레나봇")
-
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
